@@ -1,0 +1,111 @@
+/* BODY BACKGROUND ANIMATION */
+body {
+    margin:0;
+    font-family:'Comic Sans MS', cursive;
+    background: linear-gradient(-45deg,#ff9a9e,#fad0c4,#a18cd1,#fbc2eb);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+/* NAVIGATION */
+nav {
+    background:#ff4081;
+    padding:15px;
+    text-align:center;
+}
+
+nav a {
+    color:white;
+    margin:15px;
+    font-size:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover {
+    color:yellow;
+}
+
+/* MAIN TITLE */
+.main-title {
+    text-align:center;
+    font-size:65px;
+    margin-top:20px;
+    color:#ff0066;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+}
+
+/* DESCRIPTION */
+.description {
+    text-align:center;
+    font-size:22px;
+    padding:10px 40px;
+}
+
+/* CARD LAYOUT */
+.card-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:white;
+    width:260px;
+    margin:20px;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0px 5px 15px gray;
+    transition:0.4s;
+}
+
+.card:hover {
+    transform:scale(1.1);
+}
+
+.card img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* BUTTON */
+.btn {
+    background:#ff4081;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover {
+    background:blue;
+}
+
+/* CARTOON PAGE */
+.cartoon-page {
+    text-align:center;
+    padding:30px;
+}
+
+.cartoon-page img {
+    width:300px;
+    border-radius:15px;
+}
+
+.back-btn {
+    margin-top:20px;
+}
